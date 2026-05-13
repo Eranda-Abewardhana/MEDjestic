@@ -31,18 +31,35 @@ axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response) {
-      if (error.response.status === 401) {
-        if (store) {
-          // Dynamically import to avoid circular dependency at module load time
-          import('../features/auth/authSlice').then(({ logout }) => {
-            store.dispatch(logout());
-          });
+      const { status, config } = error.response;
+      
+      if (status === 401) {
+        // Prevent redirect loop if already on login page or if it's the login request itself
+        const isLoginRequest = config.url.includes('/auth/login');
+        const isLoginPage = window.location.pathname === '/login';
+
+        if (!isLoginRequest && !isLoginPage) {
+          if (store) {
+            import('../features/auth/authSlice').then(({ logout }) => {
+              store.dispatch(logout());
+            });
+          }
+          window.location.href = '/login';
         }
-        window.location.href = '/login';
-      } else if (error.response.status === 500) {
+      } else if (status === 500) {
         toast.error('A server error occurred. Please try again later.');
       }
+    } else if (error.request) {
+      // The request was made but no response was received
+      console.error('Network Error:', error.message);
+      // This is common when the backend is down or CORS fails
+      if (!window.navigator.onLine) {
+        toast.error('No internet connection.');
+      } else {
+        toast.error('Cannot connect to the server. Please check if the backend is running.');
+      }
     }
+    
     return Promise.reject(error);
   }
 );
