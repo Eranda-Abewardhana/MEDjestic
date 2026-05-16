@@ -112,7 +112,7 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
               WebkitTextFillColor: 'transparent',
             }}
           >
-            MEDjestic
+            MetroCare
           </Typography>
           <Typography variant="caption" sx={{ color: '#8A94A6', fontSize: '0.65rem', letterSpacing: 1 }}>
             PATIENT MANAGEMENT
@@ -287,7 +287,7 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
                               }}
                             />
                             <ListItemText
-                              primary="MEDjestic"
+                              primary="MetroCare"
                               primaryTypographyProps={{ fontSize: '0.8rem' }}
                             />
                           </ListItemButton>
@@ -306,7 +306,7 @@ const Sidebar = ({ mobileOpen, handleDrawerToggle }) => {
       <Divider sx={{ borderColor: sidebarBorder }} />
       <Box sx={{ px: 3, py: 2 }}>
         <Typography variant="caption" sx={{ color: textMuted, fontSize: '0.65rem' }}>
-          MEDjestic PMS v2.0
+          MetroCare PMS v2.0
         </Typography>
       </Box>
     </Box>

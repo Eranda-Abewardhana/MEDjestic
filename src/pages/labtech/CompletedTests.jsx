@@ -42,7 +42,7 @@ const handlePrint = (report) => {
     </style>
     </head><body>
     <div class="header">
-      <div class="logo">MEDjestic Laboratory</div>
+      <div class="logo">MetroCare Laboratory</div>
       <div style="text-align: right">
         <div style="font-size: 12px; color: #666;">Report Date: ${new Date(report.completedAt).toLocaleDateString()}</div>
         <div style="font-size: 14px; font-weight: bold; color: ${PRIMARY};">${report.testId}</div>
@@ -75,7 +75,7 @@ const handlePrint = (report) => {
     </div>
     <div class="footer">
       <div>Computer generated report. Valid without physical signature.</div>
-      <div>&copy; 2024 MEDjestic Patient Management System</div>
+      <div>&copy; 2024 MetroCare Patient Management System</div>
     </div>
     </body></html>
   `);

@@ -56,7 +56,7 @@ const handlePrint = (invoice) => {
     </style>
     </head><body>
     <div class="header">
-      <p class="logo">MEDjestic</p>
+      <p class="logo">MetroCare</p>
       <p class="subtitle">Patient Management System | Payment Receipt</p>
     </div>
     <div class="info-grid">
@@ -100,7 +100,7 @@ const handlePrint = (invoice) => {
     <div class="footer">
       <div class="verified-badge">✓ PAYMENT VERIFIED</div>
       <p>This is a computer-generated receipt. No signature required.</p>
-      <p>Thank you for choosing MEDjestic Hospital.</p>
+      <p>Thank you for choosing MetroCare Hospital.</p>
     </div>
     </body></html>
   `);

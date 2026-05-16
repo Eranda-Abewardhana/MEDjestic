@@ -31,7 +31,7 @@ const contactInfo = [
     icon: EmailOutlinedIcon,
     color: '#FF9F43',
     label: 'Email Addresses',
-    lines: ['info@medjestic.lk', 'support@medjestic.lk'],
+    lines: ['info@metrocare.lk', 'support@metrocare.lk'],
   },
   {
     icon: AccessTimeOutlinedIcon,
@@ -42,12 +42,12 @@ const contactInfo = [
 ];
 
 const departments = [
-  { name: 'General Inquiries',    email: 'info@medjestic.lk' },
-  { name: 'Appointments',         email: 'appointments@medjestic.lk' },
-  { name: 'Emergency Services',   email: 'emergency@medjestic.lk' },
-  { name: 'Billing & Finance',    email: 'billing@medjestic.lk' },
-  { name: 'Lab & Diagnostics',    email: 'lab@medjestic.lk' },
-  { name: 'Patient Support',      email: 'support@medjestic.lk' },
+  { name: 'General Inquiries',    email: 'info@metrocare.lk' },
+  { name: 'Appointments',         email: 'appointments@metrocare.lk' },
+  { name: 'Emergency Services',   email: 'emergency@metrocare.lk' },
+  { name: 'Billing & Finance',    email: 'billing@metrocare.lk' },
+  { name: 'Lab & Diagnostics',    email: 'lab@metrocare.lk' },
+  { name: 'Patient Support',      email: 'support@metrocare.lk' },
 ];
 
 const ContactPage = () => {

@@ -19,7 +19,7 @@ const Footer = () => {
       <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 500 }}>
         © {new Date().getFullYear()}{' '}
         <Box component="span" sx={{ color: 'primary.main', fontWeight: 600 }}>
-          MEDjestic
+          MetroCare
         </Box>{' '}
         Patient Management System. All Rights Reserved.
       </Typography>

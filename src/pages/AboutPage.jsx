@@ -32,10 +32,10 @@ const team = [
 ];
 
 const milestones = [
-  { year: '2010', event: 'MEDjestic founded with a 50-bed capacity facility in Colombo.' },
+  { year: '2010', event: 'MetroCare founded with a 50-bed capacity facility in Colombo.' },
   { year: '2013', event: 'Expanded to 200 beds; added dedicated ICU and neonatal units.' },
   { year: '2016', event: 'Achieved JCI (Joint Commission International) accreditation.' },
-  { year: '2019', event: 'Launched MEDjestic Digital Health initiative & patient portal.' },
+  { year: '2019', event: 'Launched MetroCare Digital Health initiative & patient portal.' },
   { year: '2022', event: 'Opened the Advanced Cancer Care & Research Centre.' },
   { year: '2024', event: 'Deployed AI-assisted diagnostics across all departments.' },
 ];
@@ -58,12 +58,12 @@ const AboutPage = () => (
         <Box sx={{ width: 72, height: 72, borderRadius: '18px', background: 'linear-gradient(135deg,#00C6B3,#4B9EFF)', display: 'flex', alignItems: 'center', justifyContent: 'center', mx: 'auto', mb: 3, boxShadow: '0 8px 32px rgba(0,198,179,0.4)' }}>
           <HealthAndSafetyIcon sx={{ fontSize: 38, color: '#fff' }} />
         </Box>
-        <Chip label="ABOUT MEDJESTIC" size="small" sx={{ bgcolor: 'rgba(0,198,179,0.1)', color: '#00C6B3', fontWeight: 700, fontSize: '0.7rem', letterSpacing: '0.1em', border: '1px solid rgba(0,198,179,0.25)', mb: 2 }} />
+        <Chip label="ABOUT METROCARE" size="small" sx={{ bgcolor: 'rgba(0,198,179,0.1)', color: '#00C6B3', fontWeight: 700, fontSize: '0.7rem', letterSpacing: '0.1em', border: '1px solid rgba(0,198,179,0.25)', mb: 2 }} />
         <Typography variant="h3" sx={{ fontWeight: 900, mb: 2, background: 'linear-gradient(135deg,#E8ECF4 30%,#00C6B3 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 }}>
           Healthcare Reimagined for<br />a Better Tomorrow
         </Typography>
         <Typography variant="body1" sx={{ color: '#8A94A6', maxWidth: 600, mx: 'auto', lineHeight: 1.8 }}>
-          MEDjestic powers Metro MediCare Hospital — a leading multi-specialty healthcare institution
+          MetroCare powers Metro MediCare Hospital — a leading multi-specialty healthcare institution
           committed to delivering compassionate, technology-driven care to every patient.
         </Typography>
       </Box>

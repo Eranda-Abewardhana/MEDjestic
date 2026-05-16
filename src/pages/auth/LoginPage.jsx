@@ -206,7 +206,7 @@ const LoginPage = () => {
             </Box>
             <Box>
               <Typography variant="h5" fontWeight={800} sx={{ color: '#E8ECF4', lineHeight: 1 }}>
-                MEDjestic
+                MetroCare
               </Typography>
               <Typography variant="caption" sx={{ color: '#8A94A6', letterSpacing: '0.1em' }}>
                 PATIENT MANAGEMENT
@@ -301,7 +301,7 @@ const LoginPage = () => {
                 Welcome Back
               </Typography>
               <Typography sx={{ color: '#8A94A6', fontSize: '0.9rem' }}>
-                Sign in to access your MEDjestic dashboard
+                Sign in to access your MetroCare dashboard
               </Typography>
             </Box>
 
@@ -325,7 +325,7 @@ const LoginPage = () => {
                 <TextField
                   fullWidth
                   label={t('email_label')}
-                  placeholder="user@medjestic.com"
+                  placeholder="user@metrocare.com"
                   {...register('email')}
                   error={!!errors.email}
                   helperText={errors.email?.message}
